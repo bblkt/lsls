@@ -29,7 +29,7 @@ class YukkiBot(Client):
         try:
             await self.send_message(
                 chat_id=config.LOG_GROUP_ID,
-                text=f"**» {self.mention} ʙᴏᴛ sᴛᴀʀᴛᴇᴅ : ɪᴅ :{self.id} ɴᴀᴍᴇ : {self.name} ᴜsᴇʀɴᴀᴍᴇ : @{self.username}",
+                text=f"**» bc{self.mention} ʙᴏᴛ sᴛᴀʀᴛᴇᴅ : ɪᴅ :{self.id} ɴᴀᴍᴇ : {self.name} ᴜsᴇʀɴᴀᴍᴇ : @{self.username}",
             )
         except (errors.ChannelInvalid, errors.PeerIdInvalid):
             LOGGER(__name__).error(
